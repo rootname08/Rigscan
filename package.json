@@ -1,0 +1,19 @@
+{
+  "name": "rigscan",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:web": "cd apps/web && npm run dev",
+    "seed": "node packages/tools/make_seed_csv.js",
+    "build:links": "node packages/tools/build_links.js",
+    "scrape": "node packages/scrapers/rigscan.js",
+    "csv": "node packages/tools/prices_csv.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.76.0",
+    "dotenv": "^17.2.3",
+    "playwright": "^1.56.1",
+    "tslib": "^2.8.1"
+  }
+}

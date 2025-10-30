@@ -1,0 +1,27 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+.cache/
+.turbo/
+.pnpm-store/
+npm-debug.log*
+yarn-error.log*
+coverage/
+playwright/.cache/
+playwright-report/
+test-results/
+
+# Env / credenciales
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
